@@ -1,4 +1,5 @@
-var processorPrice = {
+// Словари с категориями
+  var processorPrice = {
     'i5': 5000,
     'i7': 10000
   };
@@ -12,7 +13,8 @@ var processorPrice = {
     8: 3000,
     16: 4000
   };
-  
+
+  // Считаем стоимость компьютера
   var buildComputer = function (memory, display, processor) {
     var customComputer = {
       basicPrice: 5000,
@@ -32,6 +34,8 @@ var processorPrice = {
     return customComputer;
   };
   
+// Вызываем функции
+
   var myComputer = buildComputer(8, 13, 'i7');
   console.log('В корзине ' + myComputer.getDescription() + ' стоимостью ' + myComputer.getPrice());
   
